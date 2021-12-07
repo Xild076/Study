@@ -11,7 +11,7 @@ class Study(object):
             "says":"dice",
             "don't know":"no se^",
             "every day":"diario",
-            "the dances":"los biales",
+            "the dances":"los bailes",
             "bottle":"botella",
             "take off":"arranca",
             "the band":"la banda",
