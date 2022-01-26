@@ -6,11 +6,11 @@ class Study(object):
     def __init__(self):
         self.words = {
             "brother": "hermano",
-            "alma": "alma",
+            "soul": "alma",
             "really": "realmente",
             "road": "camino",
             "journey": "jornada",
-            "with me": "conmingo",
+            "with me": "conmigo",
             "even though": "aunque",
             "man": "hombre",
             "friendship": "amistad",
@@ -43,6 +43,8 @@ class Study(object):
 
         self.delete_copy = self.words
         self.wrong = []
+        self.total = len(list(self.delete_copy))
+        self.missed = 0
 
     def start(self):
         while len(self.delete_copy) != 0:
@@ -55,11 +57,14 @@ class Study(object):
                 print("Right")
             else:
                 print("Wrong")
-                self.wrong.append[self.delete_copy[object_guess]
+                self.missed += 1
+                self.wrong.append(self.delete_copy[object_guess])
                 print(self.delete_copy[object_guess])
             del (self.delete_copy[object_guess])
-         print("\nGG! Ur done!)
-         print(f"Wrong: {self.wrong}")
+        
+        print("\nGG! Ur done!")
+        print(f"Score: {(self.total-self.missed)/self.total}")
+        print(f"Wrong: {self.wrong}")
 
 if __name__ == "__main__":
     study = Study()
