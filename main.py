@@ -42,7 +42,6 @@ class Study(object):
         }
 
         self.delete_copy = self.words
-
         self.wrong = []
 
     def start(self):
@@ -56,8 +55,11 @@ class Study(object):
                 print("Right")
             else:
                 print("Wrong")
+                self.wrong.append[self.delete_copy[object_guess]
                 print(self.delete_copy[object_guess])
             del (self.delete_copy[object_guess])
+         print("\nGG! Ur done!)
+         print(f"Wrong: {self.wrong}")
 
 if __name__ == "__main__":
     study = Study()
