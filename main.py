@@ -1,7 +1,27 @@
 
 import random
+from re import S
 
-
+'''UPDATE!!! ADD NEW WORDS!!! STUDY!!!
+UPDATE!!! ADD NEW WORDS!!! STUDY!!!
+UPDATE!!! ADD NEW WORDS!!! STUDY!!!
+UPDATE!!! ADD NEW WORDS!!! STUDY!!!
+UPDATE!!! ADD NEW WORDS!!! STUDY!!!
+UPDATE!!! ADD NEW WORDS!!! STUDY!!!
+UPDATE!!! ADD NEW WORDS!!! STUDY!!!
+UPDATE!!! ADD NEW WORDS!!! STUDY!!!
+UPDATE!!! ADD NEW WORDS!!! STUDY!!!
+v
+UPDATE!!! ADD NEW WORDS!!! STUDY!!!
+UPDATE!!! ADD NEW WORDS!!! STUDY!!!
+UPDATE!!! ADD NEW WORDS!!! STUDY!!!
+UPDATE!!! ADD NEW WORDS!!! STUDY!!!
+v
+UPDATE!!! ADD NEW WORDS!!! STUDY!!!
+v
+UPDATE!!! ADD NEW WORDS!!! STUDY!!!
+UPDATE!!! ADD NEW WORDS!!! STUDY!!!
+UPDATE!!! ADD NEW WORDS!!! STUDY!!!'''
 class Study(object):
     def __init__(self):
         self.words = {
@@ -14,7 +34,7 @@ class Study(object):
             "even though": "aunque",
             "man": "hombre",
             "friendship": "amistad",
-            "respect": "respecto",
+            "respect": "respeto",
             "affection": "carin~o",
             "I remeber": "recuerdo",
             "together": "juntos",
@@ -39,6 +59,8 @@ class Study(object):
             "necessary": "preciso",
             "feel": "sentir",
             "big": "gran",
+            "i say to you":"digo",
+            "that one":"aquel",
         }
 
         self.delete_copy = self.words
@@ -63,7 +85,14 @@ class Study(object):
             del (self.delete_copy[object_guess])
         
         print("\nGG! Ur done!")
-        print(f"Score: {(self.total-self.missed)/self.total}")
+        score = (self.total-self.missed)/self.total*100
+        print(f"Score: {score}%")
+        if 100> score >= 90: print("A for Acceptable")
+        elif 90 > score >= 80: print("B for Bad")
+        elif 80 > score >= 70: print("C for Child, R U Ok?")
+        elif 70 > score >= 60: print("D for Dunce")
+        elif 60 > score: print("F for Faluire [Insert emotional damage]")
+        elif score == 100: print("I'm finally considering calling you my child")
         print(f"Wrong: {self.wrong}")
 
 if __name__ == "__main__":
