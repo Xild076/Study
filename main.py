@@ -1,27 +1,6 @@
 
 import random
-from re import S
 
-'''UPDATE!!! ADD NEW WORDS!!! STUDY!!!
-UPDATE!!! ADD NEW WORDS!!! STUDY!!!
-UPDATE!!! ADD NEW WORDS!!! STUDY!!!
-UPDATE!!! ADD NEW WORDS!!! STUDY!!!
-UPDATE!!! ADD NEW WORDS!!! STUDY!!!
-UPDATE!!! ADD NEW WORDS!!! STUDY!!!
-UPDATE!!! ADD NEW WORDS!!! STUDY!!!
-UPDATE!!! ADD NEW WORDS!!! STUDY!!!
-UPDATE!!! ADD NEW WORDS!!! STUDY!!!
-v
-UPDATE!!! ADD NEW WORDS!!! STUDY!!!
-UPDATE!!! ADD NEW WORDS!!! STUDY!!!
-UPDATE!!! ADD NEW WORDS!!! STUDY!!!
-UPDATE!!! ADD NEW WORDS!!! STUDY!!!
-v
-UPDATE!!! ADD NEW WORDS!!! STUDY!!!
-v
-UPDATE!!! ADD NEW WORDS!!! STUDY!!!
-UPDATE!!! ADD NEW WORDS!!! STUDY!!!
-UPDATE!!! ADD NEW WORDS!!! STUDY!!!'''
 class Study(object):
     def __init__(self):
         self.words = {
